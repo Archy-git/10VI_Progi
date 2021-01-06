@@ -19,9 +19,15 @@ def root():
 
 @app.route('/pogasall',methods=['GET'])
 def pogasall():
+<<<<<<< HEAD
     aa = float(request.args.get('a',default='0.',type=str))
     aa= "Ievadītā vērtība"
     return render_template("sveikaPasaule.html",vards="Kontroļu pārbaude",rezultats=rez)
+=======
+    aa = request.args.get('a',default='0.',type=str)
+    aa= "Ievadītā vērtība: " + aa
+    
+    return render_template("sveikaPasaule.html",vards="Kontroļu pārbaude",rezultats=aa)
 
 @app.route('/pogas')
 def pogas():
