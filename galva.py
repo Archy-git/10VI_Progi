@@ -21,7 +21,7 @@ def root():
 def pogasall():
     aa = float(request.args.get('a',default='0.',type=str))
     aa= "Ievadītā vērtība"
-    return render_template("sveikaPasaule.html",vards="Kontroļu pārbaude",rezultats=rez)
+    return render_template("sveikaPasaule.html",vards="Kontroļu pārbaude")
     aa = request.args.get('a',default='0.',type=str)
     aa= "Ievadītā vērtība: " + aa
     
